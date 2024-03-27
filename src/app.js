@@ -19,8 +19,8 @@ window.onload = function() {
   ];
   let nom = ["backery", "breadhouse", "breadmachine", "glutencave"];
 
-  let textOf = '<ul class="list-group">';
-  textOf += '<li class="list-group-item bg-success text-light">Options</li>';
+  let textOf = '<ul class="list-group list-group-flush">';
+  textOf += '<li class="list-group-item bg-dark text-white">Options</li>';
 
   for (const iterator of pron) {
     for (const item of adj) {
