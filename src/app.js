@@ -2,14 +2,9 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
-  console.log("hola mundo");
-
-  let pron = ["the", "our"];
-  let adj = [
+  let pronoun = ["the", "our"];
+  let adjective = [
     "great",
     "big",
     "one and only",
@@ -17,14 +12,14 @@ window.onload = function() {
     "incredible",
     "spectacular"
   ];
-  let nom = ["backery", "breadhouse", "breadmachine", "glutencave"];
+  let noun = ["backery", "breadhouse", "breadmachine", "glutencave"];
 
   let textOf = '<ul class="list-group list-group-flush">';
   textOf += '<li class="list-group-item bg-dark text-white">Options</li>';
 
-  for (const iterator of pron) {
-    for (const item of adj) {
-      for (const element of nom) {
+  for (const iterator of pronoun) {
+    for (const item of adjective) {
+      for (const element of noun) {
         textOf += `
           <li class="list-group-item">
             ${iterator}${item}${element}.com
